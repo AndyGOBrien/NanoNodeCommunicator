@@ -5,9 +5,9 @@ package com.llamalabb.nanonodecommunicator
  */
 interface NodeRPCInterface {
 
-    fun AccountBalance(account: String) : RawAccountBalance
-    fun AccountBlockCount(account: String) : String
-    fun AccountGet(key: String) : String
+    fun accountBalance(account: String) : RawAccountBalance
+    fun accountBlockCount(account: String) : String
+    fun accountGet(key: String) : String
     fun AccountHistory(account: String, count: Int) : List<History>
     fun AccountInfo(account: String) : AccountInformation
     fun AccountKey(account: String) : String
